@@ -32,16 +32,16 @@
     </div>
     <div class="msg"> "As I complete three months here, I wanted to take a moment to express my gratitude. Thank you for your guidance, support, and the warm welcome I've received since joining the team. Working under your leadership has been a truly enriching experience, and I look forward to learning and growing even more in the days to come. Wishing you a wonderful day!"</div>
     
-    <audio src="sound.mp3" id="my_audio" loop="1"></audio>
-    <audio autoplay id="my_audio" src="sound.mp3" loop="loop"></audio>
-    
-    <audio id="my_audio" autoplay preload="auto" async>
+   <audio id="my_audio" autoplay loop>
       <source src="sound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
     </audio>
-  <script type="text/javascript">
-    window.onload=function(){
-      document.getElementById("my_audio").play();
-    }
+
+    <script type="text/javascript">
+      window.onload = function() {
+        var audio = document.getElementById("my_audio");
+        audio.play();
+      };
   </script>
 </body>
 </html>
